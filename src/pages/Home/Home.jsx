@@ -1,5 +1,14 @@
+import Header from "../../components/Header";
+import Scroll from "../../components/Scroll";
+
 const Home = () => {
-  return <div className="font-poppins">Home mamu tumi koi?</div>;
+  return (
+    <div>
+      {" "}
+      <Header></Header>
+      <Scroll></Scroll>
+    </div>
+  );
 };
 
 export default Home;

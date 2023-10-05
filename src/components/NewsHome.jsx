@@ -1,10 +1,11 @@
 import { length } from "localforage";
 import { useEffect, useState } from "react";
+import ShowNewsCard from "./ShowNewsCard";
 
 const NewsHome = () => {
   const [news, setNews] = useState([]);
   useEffect(() => {
-    fetch("/public/data/news.json")
+    fetch("/data/news.json")
       .then((res) => res.json())
       .then((news) => setNews(news))
       .catch((err) => console.error(err));
@@ -15,7 +16,7 @@ const NewsHome = () => {
         Dragon News Home ({news.length})
       </h3>
       {news.map((aNews) => (
-        <p key={aNews._id}>{aNews.title}</p>
+        <ShowNewsCard key={aNews._id} aNews={aNews}></ShowNewsCard>
       ))}
     </div>
   );

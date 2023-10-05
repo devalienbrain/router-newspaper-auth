@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    fetch("/public/data/categories.json")
+    fetch("/data/categories.json")
       .then((res) => res.json())
       .then((categories) => setCategories(categories))
       .catch((err) => console.error(err));

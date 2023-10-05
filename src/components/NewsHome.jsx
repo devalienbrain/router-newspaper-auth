@@ -1,4 +1,3 @@
-import { length } from "localforage";
 import { useEffect, useState } from "react";
 import ShowNewsCard from "./ShowNewsCard";
 

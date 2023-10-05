@@ -11,7 +11,7 @@ const Home = () => {
       {" "}
       <Header></Header>
       <Scroll></Scroll>
-      <div className="my-7">
+      <div className="my-7 sticky top-0">
         <Navbar></Navbar>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4">
